@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishnu Kamagere | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #f9fafb, #f3f4f6);
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #111827, #1f2937);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #d1d5db;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #9ca3af;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #111827;
+    }
+
+    .project {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.1);
+    }
+
+    .project img {
+      max-width: 100%;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .project h3 {
+      margin-bottom: 0.5rem;
+      color: #1e40af;
+    }
+
+    .project p {
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+
+    .contact p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact p a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact p a:hover {
+      text-decoration: underline;
+    }
+
+    .resume-button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background-color: #1e40af;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .resume-button:hover {
+      background-color: #1c3aa9;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Vishnu Kamagere</h1>
+    <p>Healthcare Consultant | Data Scientist | Biomedical Engineer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a healthcare consultant with experience advising pharmaceutical, biotech, and digital health clients on strategy, growth, and operations. I’m passionate about using technology and my consulting background to drive better outcomes in digital health, wearables, and medtech innovation.</p>
+    <a class="resume-button" href="assets/Vishnu_Kamagere_Resume.pdf" download>Download Resume</a>
+  </section>
+
+  <section id="projects">
+    <h2>Project Portfolio</h2>
+
+    <div class="project">
+      <img src="images/ecg-device.jpg" alt="ECG Heart Rate Monitor">
+      <h3>Real-Time ECG Heart Rate Monitor</h3>
+      <p>Designed a low-cost ECG device using an instrumentation amplifier, an Arduino, and Python signal processing to accurately monitor heart rate in real-time.</p>
+    </div>
+
+    <div class="project">
+      <img src="images/breast-cancer-dl.jpg" alt="Breast Cancer DL Model">
+      <h3>Deep Learning Model for Breast Cancer Severity</h3>
+      <p>Developed a Convolutional Neural Network (CNN) with batch normalization and max pooling in PyTorch to classify breast cancer severity from histopathological images.</p>
+    </div>
+
+    <div class="project">
+      <img src="images/ewing-sarcoma-ml.jpg" alt="Ewing Sarcoma ML">
+      <h3>Machine Learning Model for Ewing Sarcoma Prognosis</h3>
+      <p>Designed and trained supervised and unsupervised ML models on genomic data to predict prognosis in pediatric sarcoma patients with >80% accuracy.</p>
+    </div>
+
+    <div class="project">
+      <img src="images/ewing-sarcoma-ml.jpg" alt="Ewing Sarcoma ML">
+      <h3>Fluorescent Identification of Neural Epithelium during Nasal Endoscopy</h3>
+      <p>Senior Design Project: Designed a tunable autofluoroscent endoscope system that identifies tissue features in the brain with 85% accuracy, transforming nasal surgery for patients .</p>
+    </div>
+
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:vgkamagere15@outlook.com">vgkamagere15@outlook.com</a></p>
+    <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/vishnu-kamagere/">LinkedIn Profile</a></p>
+    <p><i class="fa-solid fa-phone"></i> (954)681-0915</p>
+  </section>
+</body>
+
+</html>
