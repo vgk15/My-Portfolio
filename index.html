@@ -43,8 +43,8 @@
     header img {
       margin-top: 1rem;
       border-radius: 50%;
-      width: 150px;
-      height: 150px;
+      width: 120px;
+      height: 120px;
       object-fit: cover;
       border: 3px solid #ffffff;
     }
@@ -66,7 +66,7 @@
     }
 
     section {
-      padding: 4rem 2rem;
+      padding: 3rem 2rem;
       max-width: 900px;
       margin: auto;
     }
@@ -75,52 +75,46 @@
       font-size: 2rem;
       margin-bottom: 1.5rem;
       color: #111827;
+      text-align: center;
     }
 
     /* Project Card */
     .project {
       background: white;
-      padding: 1.5rem;
+      padding: 1rem;
       border-radius: 1rem;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       margin-bottom: 2rem;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
       text-align: center;
     }
 
-    .project:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.1);
-    }
-
     .project img {
-      width: 200px;
-      height: 130px;
+      width: 160px;
+      height: 100px;
       object-fit: cover;
       border-radius: 0.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.8rem;
     }
 
-    /* Education Images */
+    /* Education Logos */
     #education img {
-      width: 120px;
+      width: 100px;
       height: auto;
-      margin-top: 0.5rem;
       display: block;
+      margin: 0.5rem auto;
     }
 
     /* Experience Logos */
     .Experiences {
       display: flex;
       justify-content: center;
-      gap: 1.5rem;
+      gap: 1rem;
       flex-wrap: wrap;
-      margin-top: 1rem;
     }
 
     .Experiences img {
-      width: 100px;
-      height: auto;
+      width: 80px;
+      height: 80px;
       object-fit: contain;
       border-radius: 0.5rem;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -133,31 +127,17 @@
       transform: scale(1.05);
     }
 
-    .contact p {
-      font-size: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    .contact p a {
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .contact p a:hover {
-      text-decoration: underline;
-    }
-
     .resume-button {
       display: inline-block;
       margin-top: 1.5rem;
       background-color: #1e40af;
       color: white;
-      padding: 0.75rem 1.5rem;
+      padding: 0.5rem 1rem;
       border-radius: 0.5rem;
       text-decoration: none;
       font-weight: 600;
       transition: background-color 0.3s ease;
+      font-size: 0.9rem;
     }
 
     .resume-button:hover {
@@ -181,7 +161,7 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I'm a healthcare consultant and biomedical engineer with a passion for digital health and wearable technology. My experience spans pharmaceutical strategy, biotech commercialization, and MedTech innovation, having advised leading pharma and life sciences clients on growth strategy, go-to-market, and operational scaling. I hold a degree in Biomedical Engineering from Purdue University and am currently pursuing a Master’s in Data Science at Georgia Tech. Long term, I hope to work in venture capital to help identify, fund, and scale the next wave of healthcare innovation. I aim to leverage my strategic advisory background and technical depth to support founders building high-impact solutions in diagnostics, therapeutics, and digital health.</p>
+    <p>I'm a healthcare consultant and biomedical engineer with a passion for digital health and wearable technology. My experience spans pharmaceutical strategy, biotech commercialization, and MedTech innovation, having advised leading pharma and life sciences clients on growth strategy, go-to-market, and operational scaling. I hold a degree in Biomedical Engineering from Purdue University and am currently pursuing a Master’s in Data Science at Georgia Tech. Long term, I hope to work in venture capital to help identify, fund, and scale the next wave of healthcare innovation.</p>
     <a class="resume-button" href="July 2025 ENGR Resume.pdf" download>Download Resume</a>
   </section>
 
@@ -198,7 +178,7 @@
     <div class="project">
       <img src="DLproject.jpeg" alt="Breast Cancer DL Model">
       <h3>Deep Learning Model for Early Breast Cancer Screening</h3>
-      <p>Developed a Convolutional Neural Network (CNN) for breast cancer image classification, achieving over 95% training and validation accuracy and enabling guided care.</p>
+      <p>Developed a Convolutional Neural Network (CNN) for breast cancer image classification, achieving over 95% training and validation accuracy.</p>
     </div>
 
     <div class="project">
@@ -226,5 +206,4 @@
     <p><i class="fa-solid fa-phone"></i> 954-681-0915</p>
   </section>
 </body>
-
 </html>
