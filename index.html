@@ -22,7 +22,7 @@
     }
 
     header {
-      background: linear-gradient(to right, #111827, #1f2937);
+      background: linear-gradient(to right, #1e40af, #1f2937);
       color: white;
       padding: 3rem 2rem;
       text-align: center;
@@ -72,11 +72,25 @@
       text-align: left;
     }
 
+    /* Section Titles */
     h2 {
       font-size: 2rem;
       margin-bottom: 1.5rem;
       color: #111827;
       text-align: left;
+      position: relative;
+      padding-left: 15px;
+    }
+
+    h2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      background-color: #1e40af; /* Same blue as header gradient */
+      border-radius: 2px;
     }
 
     /* About Section */
