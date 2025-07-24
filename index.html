@@ -40,6 +40,15 @@
       color: #d1d5db;
     }
 
+    header img {
+      margin-top: 1rem;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 3px solid #ffffff;
+    }
+
     nav {
       margin-top: 1rem;
     }
@@ -68,13 +77,15 @@
       color: #111827;
     }
 
+    /* Project Card */
     .project {
       background: white;
-      padding: 2rem;
+      padding: 1.5rem;
       border-radius: 1rem;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       margin-bottom: 2rem;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
     }
 
     .project:hover {
@@ -83,21 +94,43 @@
     }
 
     .project img {
-      width: 100%;
-      height: 300px;
+      width: 200px;
+      height: 130px;
       object-fit: cover;
       border-radius: 0.5rem;
       margin-bottom: 1rem;
     }
 
-    .project h3 {
-      margin-bottom: 0.5rem;
-      color: #1e40af;
+    /* Education Images */
+    #education img {
+      width: 120px;
+      height: auto;
+      margin-top: 0.5rem;
+      display: block;
     }
 
-    .project p {
-      font-size: 0.95rem;
-      color: #4b5563;
+    /* Experience Logos */
+    .Experiences {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .Experiences img {
+      width: 100px;
+      height: auto;
+      object-fit: contain;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      background: white;
+      padding: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .Experiences img:hover {
+      transform: scale(1.05);
     }
 
     .contact p {
@@ -141,6 +174,7 @@
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
+      <a href="#Experience">Experience</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -149,23 +183,22 @@
     <h2>About Me</h2>
     <p>I'm a healthcare consultant and biomedical engineer with a passion for digital health and wearable technology. My experience spans pharmaceutical strategy, biotech commercialization, and MedTech innovation, having advised leading pharma and life sciences clients on growth strategy, go-to-market, and operational scaling. I hold a degree in Biomedical Engineering from Purdue University and am currently pursuing a Master’s in Data Science at Georgia Tech. Long term, I hope to work in venture capital to help identify, fund, and scale the next wave of healthcare innovation. I aim to leverage my strategic advisory background and technical depth to support founders building high-impact solutions in diagnostics, therapeutics, and digital health.</p>
     <a class="resume-button" href="July 2025 ENGR Resume.pdf" download>Download Resume</a>
-  
+  </section>
+
   <section id="education">
     <h2>Education</h2>
-    <p>Graduate Degree: Georgia Institute of Technology, M.S in Data Science
-<img src="gt_logo.jpg" alt="Georgia Institute of Technology">
-      <p>Undergraduate Degree: Purdue University, B.S in Biomedical Engineering
-<img src="purdue_logo.jpg" alt="Purdue University">
+    <p>Graduate Degree: Georgia Institute of Technology, M.S in Data Science</p>
+    <img src="gt_logo.jpg" alt="Georgia Institute of Technology">
+    <p>Undergraduate Degree: Purdue University, B.S in Biomedical Engineering</p>
+    <img src="purdue_logo.jpg" alt="Purdue University">
+  </section>
 
-    
   <section id="projects">
     <h2>Project Portfolio</h2>
-
-  
     <div class="project">
       <img src="DLproject.jpeg" alt="Breast Cancer DL Model">
       <h3>Deep Learning Model for Early Breast Cancer Screening</h3>
-      <p>Developed a Convolutional Neural Network (CNN) for breast cancer image classification, achieving over 95% training and validation accuracy and enabling guided care</p>
+      <p>Developed a Convolutional Neural Network (CNN) for breast cancer image classification, achieving over 95% training and validation accuracy and enabling guided care.</p>
     </div>
 
     <div class="project">
@@ -173,20 +206,17 @@
       <h3>Predictive ML Model for Metastasis Risk in Ewing Sarcoma</h3>
       <p>Designed and trained a ML model to predict metastasis risk in Ewing Sarcoma patients, enabling data-informed clinical decisions.</p>
     </div>
+  </section>
 
   <section id="Experience" class="Experience">
-  <h2>Experience</h2>
-
-    
-  <div class="Experiences">
-    <img src="pwc_logo.jpeg" alt="PwC">
-    <img src="novartis_logo.png" alt="Novartis" 
-    <img src="alcon_logo.jpeg" alt="Alcon" 
-    <img src="cook_logo.jpg" alt="Cook Medical" 
-    <img src="pdm_logo.png" alt="Purdue Data Mine" 
-  </div>
-</section>
-
+    <h2>Experience</h2>
+    <div class="Experiences">
+      <img src="pwc_logo.jpeg" alt="PwC">
+      <img src="novartis_logo.png" alt="Novartis">
+      <img src="alcon_logo.jpeg" alt="Alcon">
+      <img src="cook_logo.jpg" alt="Cook Medical">
+      <img src="pdm_logo.png" alt="Purdue Data Mine">
+    </div>
   </section>
 
   <section id="contact" class="contact">
