@@ -78,6 +78,53 @@
       text-align: center;
     }
 
+    /* Education Section */
+    #education {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .edu-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      gap: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .edu-text {
+      flex: 1;
+      font-size: 1rem;
+      color: #1f2937;
+    }
+
+    .edu-logo img {
+      max-width: 220px;
+      height: auto;
+      display: block;
+      border-radius: 6px;
+      transition: transform 0.3s ease;
+    }
+
+    .edu-logo img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Stack vertically on smaller screens */
+    @media (max-width: 768px) {
+      .edu-item {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .edu-logo img {
+        margin-top: 0.8rem;
+        max-width: 70%;
+      }
+    }
+
     /* Cards Grid Layout */
     .grid {
       display: grid;
@@ -143,13 +190,6 @@
       transform: scale(1.05);
     }
 
-    /* Education */
-    #education img {
-      display: block;
-      margin: 0.5rem auto;
-      max-width: 300px;
-    }
-
     .resume-button {
       display: inline-block;
       margin-top: 1.5rem;
@@ -193,6 +233,7 @@
     <img src="vishnu-kamagere.jpeg" alt="Vishnu Kamagere">
     <nav>
       <a href="#about">About</a>
+      <a href="#education">Education</a>
       <a href="#projects">Projects</a>
       <a href="#Experience">Experience</a>
       <a href="#contact">Contact</a>
@@ -207,10 +248,22 @@
 
   <section id="education">
     <h2>Education</h2>
-    <p>Graduate Degree: Georgia Institute of Technology, M.S in Data Science</p>
-    <img src="gt_logo.jpg" alt="Georgia Institute of Technology">
-    <p>Undergraduate Degree: Purdue University, B.S in Biomedical Engineering</p>
-    <img src="purdue_logo.jpg" alt="Purdue University">
+    <div class="edu-item">
+      <div class="edu-text">
+        <p><strong>Graduate Degree:</strong> Georgia Institute of Technology, M.S in Data Science</p>
+      </div>
+      <div class="edu-logo">
+        <img src="gt_logo.jpg" alt="Georgia Institute of Technology">
+      </div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-text">
+        <p><strong>Undergraduate Degree:</strong> Purdue University, B.S in Biomedical Engineering</p>
+      </div>
+      <div class="edu-logo">
+        <img src="purdue_logo.jpg" alt="Purdue University">
+      </div>
+    </div>
   </section>
 
   <section id="projects">
@@ -247,5 +300,4 @@
     <p><i class="fa-solid fa-phone"></i> 954-681-0915</p>
   </section>
 </body>
-
 </html>
