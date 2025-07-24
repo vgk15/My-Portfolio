@@ -125,36 +125,21 @@
     .edu-item {
       display: flex;
       align-items: center;
-      justify-content: flex-start;
-      gap: 1.5rem;
+      justify-content: space-between;
+      gap: 1rem;
       margin-bottom: 1.5rem;
-      padding: 1rem;
-      border-radius: 8px;
-      background: #ffffff;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      padding: 0;
     }
 
-    .edu-logo img {
-      width: 130px;
+    .edu-logo {
+      width: 120px;
       height: auto;
-      object-fit: contain;
     }
 
-    .edu-text p {
-      margin: 0.2rem 0;
+    .edu-text {
+      flex: 1;
       font-size: 1rem;
       color: #1f2937;
-    }
-
-    @media (max-width: 768px) {
-      .edu-item {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .edu-logo img {
-        width: 100px;
-      }
     }
 
     /* Project Grid */
@@ -263,22 +248,16 @@
   <section id="education">
     <h2>Education</h2>
     <div class="edu-item">
-      <div class="edu-logo">
-        <img src="gt_logo.jpg" alt="Georgia Institute of Technology">
-      </div>
       <div class="edu-text">
-        <p><strong>Graduate Degree:</strong></p>
-        <p>Georgia Institute of Technology, M.S. in Data Science</p>
+        <p><strong>Graduate Degree:</strong> Georgia Institute of Technology, M.S. in Data Science</p>
       </div>
+      <img class="edu-logo" src="gt_logo.jpg" alt="Georgia Institute of Technology">
     </div>
     <div class="edu-item">
-      <div class="edu-logo">
-        <img src="purdue_logo.jpg" alt="Purdue University">
-      </div>
       <div class="edu-text">
-        <p><strong>Undergraduate Degree:</strong></p>
-        <p>Purdue University, B.S. in Biomedical Engineering</p>
+        <p><strong>Undergraduate Degree:</strong> Purdue University, B.S. in Biomedical Engineering</p>
       </div>
+      <img class="edu-logo" src="purdue_logo.jpg" alt="Purdue University">
     </div>
   </section>
 
