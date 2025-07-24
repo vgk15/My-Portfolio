@@ -77,7 +77,6 @@
       font-size: 2rem;
       margin-bottom: 1.5rem;
       color: #111827;
-      text-align: left;
       position: relative;
       padding-left: 15px;
     }
@@ -89,7 +88,7 @@
       top: 0;
       width: 4px;
       height: 100%;
-      background-color: #1e40af; /* Same blue as header gradient */
+      background-color: #1e40af;
       border-radius: 2px;
     }
 
@@ -98,45 +97,63 @@
       max-width: 800px;
     }
 
+    .resume-button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background-color: #1e40af;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+      font-size: 0.9rem;
+    }
+
+    .resume-button:hover {
+      background-color: #1c3aa9;
+    }
+
     /* Education Section */
     #education {
-      max-width: 800px;
+      max-width: 1100px;
       margin: 0 auto;
+      padding: 3rem 2rem;
+      text-align: left;
     }
 
     .edu-item {
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      margin-bottom: 2rem;
-      gap: 2rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    .edu-text {
-      flex: 1;
-      font-size: 1rem;
-      color: #1f2937;
-      text-align: left;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border-radius: 8px;
+      background: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     }
 
     .edu-logo img {
-      max-width: 200px;
+      width: 130px;
       height: auto;
-      display: block;
+      object-fit: contain;
+    }
+
+    .edu-text p {
+      margin: 0.2rem 0;
+      font-size: 1rem;
+      color: #1f2937;
     }
 
     @media (max-width: 768px) {
       .edu-item {
         flex-direction: column;
         align-items: flex-start;
-        text-align: left;
-        gap: 1rem;
       }
 
       .edu-logo img {
-        max-width: 70%;
+        width: 100px;
       }
     }
 
@@ -204,23 +221,6 @@
       transform: scale(1.05);
     }
 
-    .resume-button {
-      display: inline-block;
-      margin-top: 1.5rem;
-      background-color: #1e40af;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background-color 0.3s ease;
-      font-size: 0.9rem;
-    }
-
-    .resume-button:hover {
-      background-color: #1c3aa9;
-    }
-
     /* Contact */
     .contact p {
       font-size: 1rem;
@@ -263,19 +263,21 @@
   <section id="education">
     <h2>Education</h2>
     <div class="edu-item">
-      <div class="edu-text">
-        <p><strong>Graduate Degree:</strong> Georgia Institute of Technology, M.S in Data Science</p>
-      </div>
       <div class="edu-logo">
         <img src="gt_logo.jpg" alt="Georgia Institute of Technology">
       </div>
+      <div class="edu-text">
+        <p><strong>Graduate Degree:</strong></p>
+        <p>Georgia Institute of Technology, M.S. in Data Science</p>
+      </div>
     </div>
     <div class="edu-item">
-      <div class="edu-text">
-        <p><strong>Undergraduate Degree:</strong> Purdue University, B.S in Biomedical Engineering</p>
-      </div>
       <div class="edu-logo">
         <img src="purdue_logo.jpg" alt="Purdue University">
+      </div>
+      <div class="edu-text">
+        <p><strong>Undergraduate Degree:</strong></p>
+        <p>Purdue University, B.S. in Biomedical Engineering</p>
       </div>
     </div>
   </section>
